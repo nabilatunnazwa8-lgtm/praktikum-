@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jadwal Operasional Kedai</title>
+    <style>
+        /* Mengatur latar belakang dengan pola geometris/abstrak ringan */
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #e5e9f0;
+            /* Menggunakan gradien linear untuk meniru efek pecahan kaca/geometris abu-abu pada gambar */
+            background-image: 
+                linear-gradient(135deg, rgba(255,255,255,0.7) 25%, transparent 25%), 
+                linear-gradient(225deg, rgba(255,255,255,0.7) 25%, transparent 25%), 
+                linear-gradient(45deg, rgba(255,255,255,0.7) 25%, transparent 25%), 
+                linear-gradient(315deg, rgba(255,255,255,0.7) 25%, #e5e9f0 25%);
+            background-position: 40px 0, 40px 0, 0 0, 0 0;
+            background-size: 80px 80px;
+            background-repeat: repeat;
+            text-align: center;
+            color: #333;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            min-height: 100vh;
+        }
+
+        /* Container utama */
+        .container {
+            width: 90%;
+            max-width: 450px;
+            padding: 20px;
+            box-sizing: border-box;
+        }
+
+        /* Pengaturan Logo */
+        .logo {
+            width: 120px;
+            height: auto;
+            margin-top: 20px;
+        }
+
+        /* Navigasi / Breadcrumb */
+        .navigation {
+            margin: 20px 0;
+            font-size: 16px;
+        }
+        .navigation a {
+            color: #4b0082; /* Warna ungu tua */
+            text-decoration: underline;
+            font-weight: bold;
+        }
+        .navigation span {
+            margin: 0 10px;
+            color: #333;
+        }
+
+        /* Garis pembatas tipis */
+        hr {
+            border: 0;
+            height: 1px;
+            background: #bbb;
+            margin-bottom: 25px;
+        }
+
+        /* Judul utama */
+        h2 {
+            font-size: 22px;
+            margin-bottom: 25px;
+            color: #111;
+            font-weight: normal;
+        }
+
+        /* Pengaturan Tabel */
+        table {
+            width: 100%;
+            max-width: 300px;
+            margin: 0 auto;
+            border-collapse: collapse;
+            background-color: transparent;
+        }
+        
+        table, th, td {
+            border: 1px solid #000000;
+        }
+
+        th, td {
+            padding: 12px;
+            text-align: left;
+            vertical-align: top;
+            font-size: 16px;
+        }
+
+        th {
+            font-weight: normal;
+        }
+
+        /* Baris khusus catatan waktu (WIB) */
+        .note-row td {
+            font-style: italic;
+            font-size: 14px;
+            padding-top: 15px;
+        }
+
+        /* Hak cipta / Footer */
+        .footer {
+            margin-top: 40px;
+            font-size: 13px;
+            color: #666;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <!-- 1. Bagian Logo (Ganti 'logo.png' dengan file gambar Anda) -->
+        <img src="logo.jpg" alt="Logo Kedai" class="logo">
+
+        <!-- 2. Bagian Navigasi -->
+        <div class="navigation">
+            <a href="#">Beranda</a> <span>|</span> <a href="#">Jadwal Operasional</a>
+        </div>
+
+        <!-- Garis Pembatas -->
+        <hr>
+
+        <!-- 3. Judul Halaman -->
+        <h2>Jam Operasional Kedai</h2>
+
+        <!-- 4. Tabel Jadwal -->
+        <table>
+            <tr>
+                <th>Hari</th>
+                <th>Jam Buka</th>
+            </tr>
+            <tr>
+                <td>Senin -<br>Jumat</td>
+                <td>09.00 -<br>22.00</td>
+            </tr>
+            <tr>
+                <td>Sabtu -<br>Minggu</td>
+                <td>10.00 -<br>24.00</td>
+            </tr>
+            <tr class="note-row">
+                <td colspan="2">Format waktu dalam WIB</td>
+            </tr>
+        </table>
+
+        <!-- 5. Bagian Footer -->
+        <div class="footer">
+            Created by Dede Iyan Supardi @2026
+        </div>
+    </div>
+
+</body>
+</html>
